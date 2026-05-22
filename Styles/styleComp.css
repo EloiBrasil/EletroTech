@@ -1,0 +1,351 @@
+/* ===== ÍCONES E BOTÕES DE AÇÃO ===== */
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.button-act-edit {
+    margin: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+.button-act-exc {
+    margin: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-acao {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-salvar {
+    background: #ffd500;
+    color: #333;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-salvar:hover { background: #e6c000; }
+
+.btn-remover {
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-add-material {
+    background: transparent;
+    border: 2px dashed #ffd500;
+    color: #333;
+    border-radius: 10px;
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.btn-add-material:hover { background: #fff9d6; }
+
+
+/* ===== TABELAS ===== */
+table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ffd500;
+}
+
+td, tr, th {
+    border: 1px solid #ffd500;
+}
+
+.table-users {
+    width: 80%;
+    margin: auto;
+}
+
+.table-metas {
+    width: 80%;
+    margin: auto;
+}
+
+.table-os {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* ===== IMAGENS ===== */
+.eletrotech {
+    width: 150px;
+}
+
+
+/* ===== MODAL (fundo escuro) ===== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+    animation: aparecer 0.3s ease;
+}
+
+.modal-content-lg {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+    margin: 5% auto;
+    animation: aparecer 0.3s ease;
+}
+
+.modal-content h2,
+.modal-content-lg h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+.modal-box {
+    background: #fff;
+    width: 90%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+    margin: 10% auto;
+    animation: aparecer 0.3s ease;
+}
+
+.modal-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ===== BOTÃO FECHAR ===== */
+.close-btn {
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666;
+    transition: 0.2s;
+}
+
+.close-btn:hover {
+    color: #000;
+    transform: scale(1.1);
+}
+
+
+/* ===== FORMULÁRIOS ===== */
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.cadastro label {
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #444;
+    font-weight: 600;
+}
+
+.cadastro input[type="text"],
+.cadastro input[type="password"],
+.cadastro input[type="number"],
+.cadastro input,
+.cadastro select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.cadastro input[type="text"]:focus,
+.cadastro input[type="password"]:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.form-modal label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-modal input,
+.form-modal select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.form-delete {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.senha-cad label {
+    margin-top: 10px;
+}
+
+.linha-material {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.linha-material select { flex: 2; }
+.linha-material input  { flex: 1; }
+
+
+/* ===== BOTÃO PRINCIPAL ===== */
+.enter {
+    background: #ffd500;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 93%;
+}
+
+.enter:hover {
+    background: #357abd;
+    transform: translateY(-2px);
+}
+
+
+/* ===== LINKS ===== */
+.cadastro a {
+    text-align: center;
+    text-decoration: none;
+    color: #ffd500;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.cadastro a:hover {
+    color: #2d5f96;
+}
+
+
+/* ===== DASHBOARD ===== */
+.card-dashboard {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card-dashboard:hover {
+    transform: translateY(-4px);
+}
+
+.card-amarelo {
+    background: #ffd500;
+}
+
+.card-escuro {
+    background: #333;
+    color: #ffd500;
+}
+
+.card-numero {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.grafico-box {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+}
+
+
+/* ===== LOGOUT ===== */
+.logout {
+    margin-left: 700px;
+}

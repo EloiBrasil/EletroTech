@@ -1,0 +1,13 @@
+# Conexão com banco de dados
+banco/bdEletro.php
+
+# Dependências e cache
+vendor/
+node_modules/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
